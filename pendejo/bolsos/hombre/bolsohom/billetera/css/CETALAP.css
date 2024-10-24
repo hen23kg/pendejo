@@ -1,0 +1,12 @@
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .product {
+        width: 45%; /* Dos productos por fila en tabletas */
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: 90%; /* Un producto por fila en móviles */
+    }
+}

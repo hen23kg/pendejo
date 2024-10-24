@@ -1,0 +1,81 @@
+/* Estilos generales */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: white; /* Color de fondo uniforme para toda la interfaz */
+    color: rgb(17, 17, 17); /* Color del texto para que contraste con el fondo */
+}
+
+main {
+    max-width: 1200px; /* Ancho máximo para laptops */
+    margin: 20px auto; /* Centrar el contenido */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Estilos para las imágenes */
+img {
+    width: 100%; /* Las imágenes ocupan el 100% del contenedor */
+    height: auto; /* Mantener la relación de aspecto */
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+}
+
+/* Estilos para los títulos y párrafos */
+h1 {
+    font-size: 24px; /* Tamaño de fuente para el título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+p {
+    font-size: 16px; /* Tamaño de fuente para los párrafos */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #b2b5b7;
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    font-size: 16px; /* Tamaño de fuente del botón */
+    margin-top: 10px; /* Espacio encima del botón */
+}
+
+/* Efecto hover para los botones */
+button:hover {
+    background-color: white; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilos responsivos */
+@media (min-width: 600px) {
+    main {
+        display: flex; /* Usar flexbox para pantallas más grandes */
+        flex-direction: row; /* Disposición en fila */
+        justify-content: space-between; /* Espacio entre elementos */
+    }
+
+    main > div {
+        flex: 1; /* Cada div ocupa el mismo espacio */
+        margin: 10px; /* Espacio entre divs */
+    }
+
+    img {
+        max-width: 90%; /* Limitar el ancho de las imágenes en pantallas más grandes */
+    }
+}
+
+@media (min-width: 900px) {
+    h1 {
+        font-size: 28px; /* Aumentar el tamaño del título en pantallas grandes */
+    }
+
+    p {
+        font-size: 18px; /* Aumentar el tamaño del texto en pantallas grandes */
+    }
+
+    button {
+        font-size: 18px; /* Aumentar el tamaño del botón en pantallas grandes */
+    }
+}

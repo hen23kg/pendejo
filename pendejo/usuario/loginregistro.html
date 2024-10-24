@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Registro</title>
+    <link rel="stylesheet" href="./css/resgistro.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Crear Cuenta</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Nombre">
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Email">  
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Contraseña">
+                    <i class="bx bxs-user"></i>
+                </div>
+                
+                <button> Registrarse</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Iniciar Sesión</h1>
+                <div class="input-box">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Contraseña">
+                    <i class="bx bxs-user"></i>
+                </div>
+                <div class="forgot-link">
+                    <a href="#">forgot password</a>
+                </div>
+                <button ><a href="../inicio/index.html">Iniciar Sesión</a></button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>¡Bienvenido de nuevo!</h1>
+                    <h2>ZAHIRA</h2>
+                    <p>Para mantenerse conectado con nosotros, por favor inicie sesión con su información personal</p>
+                    <button class="ghost" id="signIn"><a href="../inicio/index.html"> Iniciar Sesión</a></button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>¡Hola, Amigo!</h1>
+                    <h2>ZAHIRA</h2>
+                    <p>Ingrese sus datos personales y comience su viaje con nosotros</p>
+                    <button class="ghost" id="signUp">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="javascritp/scripts.js"></script>
+</body>
+</html>
